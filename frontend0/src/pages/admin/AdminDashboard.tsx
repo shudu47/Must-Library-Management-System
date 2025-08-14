@@ -61,19 +61,13 @@ const AdminDashboard: React.FC = () => {
         <h1 className="text-2xl md:text-3xl font-bold mb-4 md:mb-0">
           Administrator Dashboard
         </h1>
-        <div className="flex space-x-4">
-          <Link to="/admin/books/add" className="btn-primary flex items-center gap-2">
-            <Plus className="h-4 w-4" />
-            Add New Book
-          </Link>
-        </div>
       </div>
 
       {stats && (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
           <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
             <div className="flex items-center mb-4">
-              <div className="bg-primary-100 p-3 rounded-full mr-4">
+              <div className="bg-primary-100 p-3 rounded-full mr-5">
                 <BookOpen className="h-6 w-6 text-primary-700" />
               </div>
               <h2 className="text-lg font-semibold">Total Books</h2>
